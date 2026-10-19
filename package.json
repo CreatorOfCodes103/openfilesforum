@@ -1,0 +1,7 @@
+{
+  "name": "openfiles-forum",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public community file sharing forum",
+  "dependencies": { "@netlify/blobs": "^9.0.0" }
+}

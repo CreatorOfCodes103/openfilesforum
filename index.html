@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A community forum for sharing permitted files.">
+  <title>OpenFiles Forum</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-icon">OF</span><span>OpenFiles <span class="muted">Forum</span></span></a><span class="online"><i></i> Community file board</span></header>
+<main class="layout">
+  <section class="hero"><div class="eyebrow">COMMUNITY FILE SHARING</div><h1>Share useful files.<br><span>Find your next tool.</span></h1><p>Upload, discover and download community files in one place.</p><div class="hero-stats"><span><b id="file-count">0</b> shared files</span><span>Public community</span></div></section>
+  <section class="panel upload-panel"><div class="section-head"><div><div class="eyebrow">CONTRIBUTE</div><h2>Publish a file</h2></div><span class="upload-symbol">↑</span></div>
+    <form id="upload-form"><label for="author">Display name</label><input id="author" name="author" maxlength="40" placeholder="e.g. ByteBuilder" required>
+      <label for="title">Post title</label><input id="title" name="title" maxlength="90" placeholder="What are you sharing?" required>
+      <label for="description">Description <span class="muted">(optional)</span></label><textarea id="description" name="description" maxlength="500" rows="3" placeholder="What does this file do?"></textarea>
+      <label class="dropzone" for="file-input"><span class="file-icon">↥</span><strong id="file-label">Choose a file to upload</strong><small>Maximum 5 MB · no disk images or executable files</small><input id="file-input" type="file" required></label>
+      <div class="rules">Allowed: PDF, TXT, ZIP, common images, audio, video and office documents. ISO, IMG, EXE, scripts and unknown formats are blocked.</div>
+      <button id="submit-button" type="submit">Publish to forum <span>↗</span></button><p id="form-message" class="message" role="status"></p>
+    </form>
+  </section>
+  <section class="files-section"><div class="files-header"><div><div class="eyebrow">THE COMMUNITY</div><h2>Recent uploads</h2></div><div class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Search files..." aria-label="Search files"></div></div>
+    <div id="files" class="file-grid"><div class="empty-state">Loading community files…</div></div>
+    <p class="footnote">Only upload files you have the right to share. Files are public to anyone with access to this website. Do not upload personal or confidential information.</p>
+  </section>
+</main><footer><span>OpenFiles Forum</span><span>Built for sharing, made for the community.</span></footer><script src="/app.js"></script>
+</body></html>
